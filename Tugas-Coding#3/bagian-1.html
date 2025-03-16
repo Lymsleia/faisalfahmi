@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box dengan Flex dan Grid</title>
+    <style>
+      .container {
+        display: flex;
+        gap: 12px;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .box {
+        padding: 16px;
+        background-color: rgb(173, 191, 230);
+        border: 1px solid #cccccc;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Dengan Flexbox</h2>
+    <div class="container">
+      <div class="box">paragraf dalam box pertama.</div>
+      <div class="box">paragraf dalam box kedua.</div>
+    </div>
+
+    <h2>Dengan Grid</h2>
+    <div class="grid-container">
+      <div class="box">paragraf dalam box pertama.</div>
+      <div class="box">paragraf dalam box kedua.</div>
+    </div>
+  </body>
+</html>
